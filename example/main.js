@@ -3,7 +3,7 @@
  *  Photoshop-Connection Example
  *  Node.js module for connecting to Adobe Photoshop Server.
  *  Author: Antonio Gomez (https://github.com/antonio-gomez)
- * 
+ *
  *
  *  @link https://github.com/antonio-gomez/photoshop-connection
  *  @version v1.0.0
@@ -21,7 +21,7 @@ let options = {
     port: 49494
 }
 
-photoshopConnection.createClient(options)
+photoshopConnection.createClient(options, undefined, console)
 	.then((photoshopClient) => {
 		photoshopClient.sendCommand(`alert('Hello from ExtendScript!');`)
 	})
